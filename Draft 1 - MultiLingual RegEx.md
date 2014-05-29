@@ -38,14 +38,13 @@ um.utils.isValidEmail = function (sEmail) {
 ```
 ======
 Answer
-
 ======
 There is a very simple method to apply all you **RegEx logic**(that one can apply easily in English) for any Language using Unicode.
 
 For matching a **range of Unicode Characters** like *all Alphabets* **[A-Za-z]** we can use
-```js
-[\u0041-\u005A] where \u0041 is Hex-Code for A and \u005A is Hex Code for Z
+**[\u0041-\u005A]** where **\u0041** is **Hex-Code** for **A** and **\u005A** is **Hex Code** for **Z**
 
+```js
 'matchCAPS leTTer'.match(/[\u0041-\u005A]+/g)
 //output ["CAPS", "TT"]
 ```
